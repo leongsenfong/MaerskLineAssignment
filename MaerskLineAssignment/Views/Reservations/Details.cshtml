@@ -1,0 +1,74 @@
+﻿@model MaerskLineAssignment.Models.Reservation
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reservation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Container.ContainerDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Container.ContainerDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ship.ShipName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ship.ShipName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Shipyard.ShipyardName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Shipyard.ShipyardName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Shipyard1.ShipyardName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Shipyard1.ShipyardName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ArrivalDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ArrivalDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DepartureDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DepartureDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ReservationID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
